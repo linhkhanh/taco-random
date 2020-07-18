@@ -69,8 +69,8 @@ class App extends React.Component {
     constructor(props) {
         super(props),
             this.state = {
-                baseUrl: 'http://taco-randomizer.herokuapp.com/',
-                url: 'http://taco-randomizer.herokuapp.com/random/?full-tack=true',
+                baseUrl: 'https://taco-randomizer.herokuapp.com/',
+                url: 'https://taco-randomizer.herokuapp.com/random/?full-tack=true',
                 recipe_slug: '',
                 recipe_type: '',
                 searchUrl: '',
