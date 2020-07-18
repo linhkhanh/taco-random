@@ -2,7 +2,7 @@ class Part extends React.Component {
     render() {
         return (
             <div>
-                <h3>{this.props.title}: {this.props.data.slug}</h3>
+                <h3 className="text-center">{this.props.title}: {this.props.data.slug}</h3>
                 <p>{this.props.data.recipe}</p>
             </div>
         )
@@ -13,7 +13,7 @@ class AllParts extends React.Component {
     render() {
         return (
             <div>
-                <h2>Random Taco</h2>
+                <h2 className="text-center">Random Taco</h2>
                 <Part title="Shell" data={this.props.data.shell} />
                 <Part title="Mixin" data={this.props.data.mixin} />
                 <Part title="Seasoning" data={this.props.data.seasoning} />
