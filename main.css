@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+button {
+  margin-right: 2%;
+  margin-bottom: 1%;
+}
+
+.fresh {
+  background-color: rgb(179, 15, 70);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 2%;
+}
+.fresh:hover {
+  background-color: lavender;
+  color: #282c34;
+}
+.container {
+  border: 3px solid darkgreen;
+  background-color: rgb(223, 223, 196);
+  padding: 1%;
+}
+body {
+  font-family: 'Lobster', cursive;
+}
