@@ -79,12 +79,41 @@ class App extends React.Component {
     }
     // call API
     fetchData = async () => {
-        const response = await fetch(this.state.url);
-        const data = await response.json();
-        this.setState({
+        try {
+          const response = await fetch(this.state.url);
+          const data = await response.json();
+          this.setState({
             data: data
-        })
-    }
+          })
+        } catch (err) {
+          console.log(err);
+          this.setState({
+            data: {
+                mixin: {
+                    recipe: '',
+                    slug: ''
+                },
+                seasoning: {
+                    recipe: '',
+                    slug: ''
+                },
+                base_layer: {
+                    recipe: '',
+                    slug: ''
+                },
+                condiment: {
+                    recipe: '',
+                    slug: ''
+                },
+                shell: {
+                    recipe: '',
+                    slug: ''
+                }
+            }
+          })
+        }
+    
+      }
 
     // handle Change
     handleChange = (event) => {
